@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+	<color name="AppBackgroundColor">#FFC0E7FA</color>
+	<color name="TextColorBlack">#FF000000</color>
+	<color name="TextColorWhite">#FFFFFFFF</color>
+	<color name="TextColorBlue">#0066CC</color>
+	<color name="TextColorGray">#FF505050</color>
+	<color name="TextColorRed">#FF0000</color>
+	<color name="BgColor">#ffd1dce9</color>
+	<color name="bg">#ffffffff</color>
+    <color name="gray_light">#ffb0b0b0</color>
+    <color name="gray">#ff808080</color>
+    <color name="bg_main">#f7f8fa</color> 
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="half_alpha_black">#7f000000</color>
+    <color name="dark_alpha_black">#cc000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="red">#ffff0101</color>
+    <color name="grey">#ff58616d</color>
+    <color name="top_bg">#0082f0</color>
+    <color name="tab_bg">#252b39</color>
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="contacts_group_bg">#f8fcff</color>
+    <color name="contacts_child_bg">#e5f3fe</color>
+    <color name="contacts_search_bg">#c4d0f0</color>
+    <color name="fimaly_item_bg">#b3d3f3</color>
+     <color name="thirty_transparent_black">#4d000000</color>
+    <color name="dialog_class_normal">#0086f3</color>
+    <color name="dialog_class_press">#35a4ff</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="period_title_color">#ffff9600</color>
+</resources>

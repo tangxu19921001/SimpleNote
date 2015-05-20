@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_weight="1.21" />
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:scaleType="matrix"
+        android:src="@drawable/roller" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp" >
+       
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="77dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="记事"
+             android:background="@drawable/shape" 
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="66dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="提醒"
+           android:background="@drawable/shape" 
+            android:textColor="@color/black"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.23"
+            android:gravity="center"
+            android:text="私密"
+           android:background="@drawable/shape" 
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="设置"
+            android:background="@drawable/shape" 
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

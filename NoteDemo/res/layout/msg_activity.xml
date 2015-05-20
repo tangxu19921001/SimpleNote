@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape"  >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+          android:background="@drawable/shape" 
+            android:minWidth="60dp"
+            android:text="@string/app_back"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/MMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新建" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape" 
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        
+    </RelativeLayout>
+ 
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+<View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+        <EditText
+            android:id="@+id/txt_msg_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="标题"
+            android:padding="5dp"
+            android:textColor="#848484"
+            android:textSize="18sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+      
+        android:id="@+id/rel_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rel_title"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+<View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+        <TextView
+            android:id="@+id/txt_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingLeft="5dp"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+            android:text="时间"
+            android:textColor="#848484"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_select_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:minWidth="60dp"
+            android:scaleType="matrix"
+            android:src="@drawable/btn_ico_history" />
+
+        <TextView
+            android:id="@+id/txt_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_time_title"
+            android:layout_alignBottom="@+id/txt_time_title"
+            android:layout_toLeftOf="@+id/img_select_time"
+            android:textColor="#688ed1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rel_time"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="false"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/txt_msg_content"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="内容"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="#848484"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_attach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rel_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:scrollbars="horizontal"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/gv_attachlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="60dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_media_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e9e6"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e3e9e6"
+            android:orientation="horizontal"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/txt_media_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/add_face"
+                android:gravity="center"
+                android:text="表情"
+                android:textColor="#7884a0"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_media_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/add_record"
+                android:gravity="center"
+                android:text="录音"
+                android:textColor="#7884a0"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_media_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/add_img"
+                android:gravity="center"
+                android:text="图片"
+                android:textColor="#7884a0"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_media_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/add_camera"
+                android:gravity="center"
+                android:text="相机"
+                android:textColor="#7884a0"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_face"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#fff0f0f0"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:visibility="gone" >
+
+            <com.notedemo.utils.JazzyViewPager
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/face_pager"
+                app:style="cubeout"
+                android:layout_width="fill_parent"
+                android:layout_height="115.0dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#0000"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <com.notedemo.utils.CirclePageIndicator
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/chat_footer_bg" 
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_recorder_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/keyboard_text_add_btn" />
+
+        <com.notedemo.widget.RecordButton
+            android:id="@+id/btn_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_style_green"
+            android:text="按住开始录音"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

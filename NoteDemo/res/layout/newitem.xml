@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et1_newitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="标题" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et2_newitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="时间" />
+
+    <EditText
+        android:id="@+id/et3_newitem"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"         
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="内容" />
+
+    <Button
+        android:id="@+id/btn_newitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>

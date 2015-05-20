@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/text_notuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:background="@drawable/shape"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/info_title"
+            style="@style/MMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape"
+            android:text="@string/main_jishi" />
+
+        <ImageButton
+            android:id="@+id/info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_top_bg"
+            android:focusable="true"
+            android:minWidth="60dp"
+            android:src="@drawable/btn_ico_edit" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/top_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_top_layout"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView 
+        android:id="@+id/tv_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    	<EditText
+	        android:id="@+id/et_password"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPassword" >
+
+        	<requestFocus />
+    	</EditText>
+
+	    <Button
+	        android:id="@+id/obtn_password"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确定" />
+    </LinearLayout>
+ 		
+    <LinearLayout
+        android:id="@+id/search_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_top_layout"
+        android:background="@color/contacts_search_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.notedemo.widget.ClearEditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_box_bg"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_line" />
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_top_layout"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0px"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

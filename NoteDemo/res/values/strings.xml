@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NoteDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_jishi">记事</string>
+    <string name="main_newmsg">新消息</string>
+    <string name="main_beiwang">备忘</string>
+    <string name="main_tixing">提醒</string>
+    <string name="main_setting">设置</string>
+    <string name="app_new">new</string>  
+    <string name="app_back">返回</string>
+    <string name="sdcardmiss">sd卡不存在</string>
+
+</resources>

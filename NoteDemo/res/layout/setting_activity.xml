@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape" >
+
+        <TextView
+            style="@style/MMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_setting" />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_layout"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+
+            <RelativeLayout android:id="@+id/set_newmsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="提醒设置"
+                    android:textColor="#333"
+                    android:textSize="17sp" />
+<View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+               android:id="@+id/set_about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+                <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/period_title_color" />
+
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#D1D1D1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="修改密码"
+                    android:textColor="#333"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
